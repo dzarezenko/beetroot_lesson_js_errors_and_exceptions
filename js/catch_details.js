@@ -6,7 +6,13 @@ lib = {
   someFunc() {
     console.log("Function!!!");
     
-    throw new Error("Error message");
+    if (true) {
+      throw new SyntaxError("Error message");
+    }
+
+    // ... 
+
+    
   }
 
 }
@@ -16,6 +22,7 @@ console.log("Some code 1");
 try {
   lib.someFunc();
 } catch (e) {
+  console.log(e.name);
   console.log(e.toString());
 }
 
