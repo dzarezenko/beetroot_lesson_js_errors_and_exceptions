@@ -1,7 +1,7 @@
 try {
-  //eval("{"); // SyntaxError
+  eval("{"); // SyntaxError
   //aleeeert("Exception"); // ReferenceError
-
+  console.log("!!!");
   // RangeError
   let num = 10;
   //num.toPrecision(500); // A number cannot have 500 significant digits
@@ -41,4 +41,6 @@ try {
 
       break;
   }
+
+  console.log("FINISH!!!");
 }
